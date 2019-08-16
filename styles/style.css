@@ -1,6 +1,219 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/images/Chase-Richards-Climbing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Chase-Richards-Climbing.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  -webkit-text-stroke: 0.25px;
+  -webkit-text-fill-color: rgba(250, 250, 250, 0);
+  -webkit-text-stroke-color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Lalezar", cursive;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.nav-links li a:hover {
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-fill-color: rgba(160, 160, 160, 0.3);
+  -webkit-text-stroke-color: #fafafa;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 35%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  float: left;
+}
+
+body {
+  font-family: monospace;
+}
+
+.row {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  width: 1200px;
+  text-align: center;
+  margin-left: 48px;
+  margin-right: 0px;
+  margin-top: 50vh;
+}
+
 h1 {
-  font-family: Georgia;
-  font-size: 14pt;
-  font-weight: bold;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.555);
+  font-family: "Roboto", sans-serif;
+  font-size: 65pt;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.button {
+  margin-top: 30px;
+  margin-left: 440px;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.btn-one {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+  background-color: darkorange;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.btn-two {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover {
+  background-color: darkorange;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 /*# sourceMappingURL=style.css.map */
