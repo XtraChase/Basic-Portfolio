@@ -1,4 +1,5 @@
 //Mobile Site Navigation
+//tutorial source https://www.youtube.com/watch?v=gXkqy0b4M5g
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");

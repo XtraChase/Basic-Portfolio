@@ -210,4 +210,26 @@ h1 {
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
+
+.contact-form {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+#comment {
+  margin-left: 50px;
+  font-family: "Nunito", sans-serif;
+}
+
+#submit {
+  margin-left: 100px;
+  font-family: "Nunito", sans-serif;
+}
+
+#submit:hover {
+  background-color: #9e9e9e;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
 /*# sourceMappingURL=style.css.map */

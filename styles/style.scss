@@ -209,3 +209,54 @@ h1 {
   background-color: darkorange;
   transition: all 0.5s ease-in;
 } //(!active)set ative in index.html
+
+.contact-form {
+  margin-top: 30px;
+  margin-left: 30px;
+  //font-family: "Roboto", sans-serif;
+  //font-family: "Cabin Sketch", cursive;
+  //font-family: "Mouse Memoirs", sans-serif;
+  //font-family: "IM Fell DW Pica SC", serif;
+  //font-family: "Amaranth", sans-serif;
+  //font-family: "Bangers", cursive;
+  //font-family: "Fjalla One", sans-serif;
+  //font-family: "Hammersmith One", sans-serif;
+  //font-family: "Lalezar", cursive;
+  font-family: "Nunito", sans-serif;
+  //font-family: "Nunito Sans", sans-serif;
+}
+
+#comment {
+  margin-left: 50px;
+  //font-family: "Roboto", sans-serif;
+  //font-family: "Cabin Sketch", cursive;
+  //font-family: "Mouse Memoirs", sans-serif;
+  //font-family: "IM Fell DW Pica SC", serif;
+  //font-family: "Amaranth", sans-serif;
+  //font-family: "Bangers", cursive;
+  //font-family: "Fjalla One", sans-serif;
+  //font-family: "Hammersmith One", sans-serif;
+  //font-family: "Lalezar", cursive;
+  font-family: "Nunito", sans-serif;
+  //font-family: "Nunito Sans", sans-serif;
+}
+
+#submit {
+  margin-left: 100px;
+  //font-family: "Roboto", sans-serif;
+  //font-family: "Cabin Sketch", cursive;
+  //font-family: "Mouse Memoirs", sans-serif;
+  //font-family: "IM Fell DW Pica SC", serif;
+  //font-family: "Amaranth", sans-serif;
+  //font-family: "Bangers", cursive;
+  //font-family: "Fjalla One", sans-serif;
+  //font-family: "Hammersmith One", sans-serif;
+  //font-family: "Lalezar", cursive;
+  font-family: "Nunito", sans-serif;
+  //font-family: "Nunito Sans", sans-serif;
+}
+
+#submit:hover {
+  background-color: rgb(158, 158, 158);
+  transition: all 0.5s ease-in;
+}
